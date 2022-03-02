@@ -28,7 +28,7 @@ export const CompanyDetails = (props:{selected:number}) =>{
                     <EventList
                         events={db.eventList.where('companyId').equals(props.selected)}
                         showAdd={props.selected > 0}
-                        initialAddData={{studentId:props.selected}}/>
+                        initialAddData={{companyId:props.selected}}/>
                 </Col>
             </Row>
         </Container>
